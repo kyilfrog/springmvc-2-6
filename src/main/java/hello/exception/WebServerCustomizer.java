@@ -6,7 +6,7 @@ import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class WebServerCustomizer implements WebServerFactoryCustomizer<ConfigurableWebServerFactory> {
 
 	@Override
@@ -19,5 +19,7 @@ public class WebServerCustomizer implements WebServerFactoryCustomizer<Configura
 		factory.addErrorPages(errorPage404, errorPage500, errorPageEx);
 		
 	}
+	
+
 
 }
